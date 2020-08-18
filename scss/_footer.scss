@@ -1,0 +1,26 @@
+.footer {
+    background-color: $main_color;
+    height: 100px;
+    width: 100%;
+    margin-top: 60px;
+    color: white;
+    
+
+    &__container {
+        align-items: center;
+        padding-top: 30px;
+        display: flex;
+        justify-content: space-between;
+
+        &-text {
+            display: flex;
+            
+            
+        }
+
+    }
+}
+
+.cookies {
+    padding-left: 40px;
+}

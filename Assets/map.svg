@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="17px" viewBox="0 0 22 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>phone-alt</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="woodland_hotel" transform="translate(-648.000000, -5284.000000)" fill="#142C1D" fill-rule="nonzero">
+            <g id="Group-8-Copy" transform="translate(380.000000, 5091.000000)">
+                <g id="Group-9-Copy" transform="translate(268.000000, 190.000000)">
+                    <g id="phone-alt" transform="translate(0.000000, 3.000000)">
+                        <g id="map">
+                            <path d="M0,3.25049107 L0,16.3920982 C0,16.8216518 0.4365625,17.1153571 0.837986111,16.9559821 L6.11111111,14.5714286 L6.11111111,0 L0.768472222,2.12310268 C0.30443561,2.30749888 0.00011113708,2.75395858 0,3.25049107 Z M7.33333333,14.5714286 L14.6666667,17 L14.6666667,2.42857143 L7.33333333,0 L7.33333333,14.5714286 Z M21.1620139,0.0440178571 L15.8888889,2.42857143 L15.8888889,17 L21.2315278,14.8768973 C21.6956338,14.6925867 22,14.2460736 22,13.7495089 L22,0.607901786 C22,0.178348214 21.5634375,-0.115357143 21.1620139,0.0440178571 L21.1620139,0.0440178571 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
