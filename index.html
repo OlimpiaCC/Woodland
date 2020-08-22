@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Woodland</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
 
@@ -196,7 +197,32 @@
 
         </section>
 
-        <div class="slider"></div>
+        <div class="slider-wrapper">
+            <div class="green">
+                <div class="green-container container">
+                    <h1 class="green-title">Relax for your body and mind</h1>
+                    <p class="green-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                        tempor
+                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                        exercitation
+                        ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide"><img src="./Assets/s1.jpg" alt=""></div>
+                    <div class="slide"><img src="./Assets/s2.jpg" alt=""></div>
+                    <div class="slide"><img src="./Assets/s3.jpg" alt=""></div>
+                    <div class="slide"><img src="./Assets/s4.jpg" alt=""></div>
+                    <div class="slide"><img src="./Assets/s1.jpg" alt=""></div>
+                    <div class="slide"><img src="./Assets/s2.jpg" alt=""></div>
+                    <div class="slide"><img src="./Assets/s3.jpg" alt=""></div>
+                    <div class="slide"><img src="./Assets/s4.jpg" alt=""></div>
+                </div>
+            </div>
+        </div>
+
+
         <div class="contact">
             <div class="contact-content container">
                 <p class="contact-content__title">Contact us</p>
@@ -217,8 +243,6 @@
                         <img src="./Assets/mail.svg" alt="" class="contact-content__details-container-icon">
                         <p class="contact-content__details-container-container">olimpia.czech@gmail.com</p>
                     </div>
-
-
 
                 </div>
 
@@ -243,7 +267,36 @@
 
         </div>
     </div>
+    <!-- <script src="./js/tns.js"></script>
+    <script src="./js/script.js"></script> -->
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+
+
+    <script>
+        // import {tns} from './src/tiny-slider.js';
+
+        const slider = tns({
+            container: '.slider',
+            // items: 4,
+            // slideBy: 1,
+            // autoplay: false,
+            // // loop: true,
+            // rewind: true,
+            // autoplay: true,
+
+            items: 4,
+            autoplay: true,
+            autoplayTimeout: 4000,
+            controls: true,
+            nav: false,
+            autoplayButton: false,
+            autoplayButtonOutput: false,
+            touch: true,
+            mouseDrag: true,
+
+        });
+    </script>
 
 </body>
 
