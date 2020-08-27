@@ -406,6 +406,10 @@ button:hover {
   z-index: 10;
 }
 
+.slider-wrapper .tns-controls button:focus {
+  outline: none;
+}
+
 .tns-controls button[data-controls=prev] {
   left: -20%;
 }
@@ -414,10 +418,6 @@ button:hover {
   -webkit-transform: translate(-50%, -50%) rotate(180deg);
           transform: translate(-50%, -50%) rotate(180deg);
   left: -14%;
-}
-
-.tns-controls button[data-controls=next]:focus {
-  outline: none;
 }
 
 .contact {
@@ -532,6 +532,7 @@ button:hover {
 
 .paragraph-wrapper .paragraph-opening {
   width: 35%;
+  padding-top: 35px;
 }
 
 .paragraph-wrapper .paragraph-opening__title-top {
@@ -562,7 +563,271 @@ button:hover {
   background-attachment: fixed;
 }
 
-.main-wrapper {
-  height: 1000vh;
+.features-wrapper {
+  width: 100%;
+  height: 800px;
+  background-color: #F9F9F9;
+  padding-bottom: 40px;
+}
+
+.features-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.features-content .features_img {
+  width: 50%;
+  height: 50%;
+}
+
+.features-content .features-main {
+  width: 50%;
+  height: 50%;
+  padding: 40px;
+}
+
+.features-content .features-main__title {
+  font-size: 30px;
+}
+
+.features-content .features-main__copy {
+  line-height: 35px;
+  padding: 40px 0;
+}
+
+.features-content .features-main__button {
+  background-color: #00260C;
+  border: 1px solid #00260C;
+  color: #fff;
+  padding: 15px 40px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.features-slider-wrapper {
+  position: relative;
+}
+
+.features-slider-wrapper .tns-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: -15%;
+  left: 48.2%;
+}
+
+.features-slider-wrapper .tns-nav button {
+  background-color: #B9C4BD;
+  height: 0.6rem;
+  width: 0.6rem;
+  margin: 5px;
+  border: none;
+  border-radius: 50%;
+}
+
+.features-slider-wrapper .tns-nav button:focus {
+  outline: none;
+}
+
+.features-slider-wrapper .tns-nav .tns-nav-active {
+  background-color: #00260C;
+}
+
+.features-slider-wrapper .tns-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: -15%;
+  left: 48.2%;
+}
+
+.features-slider-wrapper .tns-controls:focus {
+  outline: none;
+}
+
+.features-slider-wrapper .tns-controls button {
+  border-radius: 50%;
+  text-indent: -9999rem;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin: 5px;
+}
+
+.features-slider-wrapper .tns-controls button:focus {
+  outline: none;
+}
+
+.features-slider-wrapper .tns-controls button[data-controls=prev] {
+  border: 1px solid #B9C4BD;
+  background-color: #B9C4BD;
+}
+
+.features-slider-wrapper .tns-controls button[data-controls=next] {
+  border: 1px solid #00260C;
+  background-color: #00260C;
+  -webkit-transform: none;
+          transform: none;
+}
+
+.features-slider-wrapper .features-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 260px;
+}
+
+.features-slider-wrapper .features-slider .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+  background-color: white;
+  margin: 10px;
+}
+
+.features-slider-wrapper .features-slider .slide p {
+  padding-top: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.features-slider-wrapper .features-slider .slide img {
+  width: 40%;
+  height: 40%;
+}
+
+.staff-wrapper {
+  background-color: white;
+  padding-bottom: 60px;
+}
+
+.staff-wrapper .staff-title {
+  font-size: 70px;
+  font-family: "Limber";
+  color: #00260C;
+  text-align: center;
+  padding: 60px;
+}
+
+.staff-wrapper .staff-pictures {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.staff-wrapper .staff-pictures .staff-single {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.staff-wrapper .staff-pictures .staff-single__name {
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 20px 0 10px 0;
+  letter-spacing: 0.5px;
+}
+
+.staff-wrapper .staff-pictures .staff-single__title {
+  color: #6D7278;
+  font-weight: 200;
+}
+
+.testimonials-wrapper {
+  background: url(../Assets/testimonials.jpg) no-repeat center;
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+}
+
+.testimonials-wrapper .testimonials {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.testimonials-wrapper .testimonials .tns-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  bottom: -15%;
+  left: 48.2%;
+}
+
+.testimonials-wrapper .testimonials .tns-nav button {
+  background-color: #B9C4BD;
+  height: 0.6rem;
+  width: 0.6rem;
+  margin: 5px;
+  border: none;
+  border-radius: 50%;
+}
+
+.testimonials-wrapper .testimonials .tns-nav button:focus {
+  outline: none;
+}
+
+.testimonials-wrapper .testimonials .tns-nav .tns-nav-active {
+  border: 1px solid #B9C4BD;
+  background-color: transparent;
+}
+
+.testimonials-wrapper .testimonials .testimonials-title {
+  color: white;
+  font-size: 70px;
+  font-family: "Limber";
+  text-align: center;
+  padding: 100px 0 100px 0;
+}
+
+.testimonials-wrapper .testimonials .testimonials-slider {
+  color: white;
+}
+
+.testimonials-wrapper .testimonials .testimonials-slider .slide__label {
+  padding-top: 50px;
+  font-weight: 400;
+}
+
+.testimonials-wrapper .testimonials .testimonials-slider .slide__text {
+  line-height: 40px;
 }
 /*# sourceMappingURL=index.css.map */
