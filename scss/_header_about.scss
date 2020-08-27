@@ -1,0 +1,72 @@
+.header-about {
+    // background-color: #00260C;
+    color: $white;
+    background: url("../Assets/aboutmain.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 800px;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 200px;
+        padding-bottom: 350px;
+    }
+
+    &__title {
+        font-size: 25px;
+    }
+
+    &__subtitle {
+        font-family: "Limber";
+        font-size: 90px;
+    }
+}
+
+
+.paragraph-wrapper {
+
+    display: flex;
+    padding-top: 40px;
+    width: 100%;
+
+    .paragraph-opening {
+        width: 35%;
+
+        &__title-top {
+            font-family: 'Limber';
+            font-size: 80px;
+            color: #D9DDDB;
+        }
+
+        &__title-bottom {
+            font-size: 30px;
+            font-weight: 700;
+            color: $main-color;
+            line-height: 45px;
+            margin-top: -10px;
+        }
+    }
+
+    .paragraph-text {
+        width: 65%;
+        padding-top: 40px;
+        line-height: 40px;
+    }
+
+}
+
+.middle-img {
+    height: 500px;
+    // width: 100%;
+    margin-top: 60px;
+    background: url(../Assets/aboutmiddle.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.main-wrapper {
+    height: 1000vh;
+}

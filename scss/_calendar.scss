@@ -76,6 +76,13 @@
         height: 50%;
         cursor: pointer;
 
+        &:hover {
+            border: 1px solid $main_color;
+            color: $main_color;
+            background-color: transparent;
+            transition: 0.3s;
+        }
+
     }
 
 }

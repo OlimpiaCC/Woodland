@@ -21,3 +21,16 @@
 .odd {
     flex-direction: row-reverse;
 }
+
+button:hover {
+
+    color: $main_color;
+    background-color: transparent;
+
+
+}
+
+.menu-active {
+    border-bottom: 6px solid white;
+    padding-bottom: 17px;
+}

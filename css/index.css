@@ -23,6 +23,16 @@
           flex-direction: row-reverse;
 }
 
+button:hover {
+  color: #00260C;
+  background-color: transparent;
+}
+
+.menu-active {
+  border-bottom: 6px solid white;
+  padding-bottom: 17px;
+}
+
 .header {
   color: #fff;
   background: url("./../Assets/main.jpg") no-repeat center;
@@ -115,7 +125,8 @@
 .menu__list-position {
   text-decoration: none;
   color: #fff;
-  padding-left: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .main-wrapper {
@@ -213,6 +224,14 @@
   cursor: pointer;
 }
 
+.buttonbox button:hover {
+  border: 1px solid #00260C;
+  color: #00260C;
+  background-color: transparent;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
 .about {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -283,11 +302,13 @@
 
 .article-single__text-button {
   background-color: #00260C;
+  border: 1px solid #00260C;
   color: #fff;
   padding: 15px 40px;
-  border: none;
   margin-left: 40px;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .video {
@@ -467,5 +488,81 @@
 
 .cookies {
   padding-left: 40px;
+}
+
+.header-about {
+  color: #fff;
+  background: url("../Assets/aboutmain.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 800px;
+}
+
+.header-about__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 200px;
+  padding-bottom: 350px;
+}
+
+.header-about__title {
+  font-size: 25px;
+}
+
+.header-about__subtitle {
+  font-family: "Limber";
+  font-size: 90px;
+}
+
+.paragraph-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 40px;
+  width: 100%;
+}
+
+.paragraph-wrapper .paragraph-opening {
+  width: 35%;
+}
+
+.paragraph-wrapper .paragraph-opening__title-top {
+  font-family: 'Limber';
+  font-size: 80px;
+  color: #D9DDDB;
+}
+
+.paragraph-wrapper .paragraph-opening__title-bottom {
+  font-size: 30px;
+  font-weight: 700;
+  color: #00260C;
+  line-height: 45px;
+  margin-top: -10px;
+}
+
+.paragraph-wrapper .paragraph-text {
+  width: 65%;
+  padding-top: 40px;
+  line-height: 40px;
+}
+
+.middle-img {
+  height: 500px;
+  margin-top: 60px;
+  background: url(../Assets/aboutmiddle.jpg) no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.main-wrapper {
+  height: 1000vh;
 }
 /*# sourceMappingURL=index.css.map */

@@ -2,9 +2,6 @@
     display: flex;
     padding-top: 40px;
 
-
-
-
     &__opening {
         width: 30%;
 
@@ -74,11 +71,12 @@
 
             &-button {
                 background-color: $main-color;
+                border: 1px solid $main-color;
                 color: $white;
                 padding: 15px 40px;
-                border: none;
                 margin-left: 40px;
                 cursor: pointer;
+                transition: 0.3s;
             }
         }
 
