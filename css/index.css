@@ -28,6 +28,14 @@ button:hover {
   background-color: transparent;
 }
 
+button:focus {
+  outline: none;
+}
+
+input:focus {
+  outline: none;
+}
+
 .menu-active {
   border-bottom: 6px solid white;
   padding-bottom: 17px;
@@ -425,11 +433,14 @@ button:hover {
 }
 
 .contact-content {
-  padding-top: 100px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .contact-content__title {
   font-size: 30px;
+  font-family: 'Limber';
+  font-size: 80px;
 }
 
 .contact-content__text {
@@ -463,7 +474,6 @@ button:hover {
   background-color: #00260C;
   height: 100px;
   width: 100%;
-  margin-top: 60px;
   color: white;
 }
 
@@ -829,5 +839,379 @@ button:hover {
 
 .testimonials-wrapper .testimonials .testimonials-slider .slide__text {
   line-height: 40px;
+}
+
+.header-rooms {
+  color: #fff;
+  background: url("../Assets/ourrooms.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 800px;
+}
+
+.header-rooms__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 200px;
+  padding-bottom: 350px;
+}
+
+.header-rooms__title {
+  font-size: 25px;
+}
+
+.header-rooms__subtitle {
+  font-family: "Limber";
+  font-size: 90px;
+}
+
+.rooms-wrapper {
+  background-color: #F9F9F9;
+  padding-bottom: 40px;
+}
+
+.rooms-wrapper .rooms-navi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px;
+}
+
+.rooms-wrapper .rooms-navi__p {
+  padding-left: 10px;
+}
+
+.rooms-wrapper .rooms-navi__a {
+  text-decoration: none;
+  color: black;
+}
+
+.rooms-wrapper .rooms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.rooms-wrapper .rooms .room-single {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 48%;
+  background-color: white;
+  -webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+}
+
+.rooms-wrapper .rooms .room-single__main {
+  padding: 40px;
+}
+
+.rooms-wrapper .rooms .room-single__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 25px;
+  font-size: 25px;
+}
+
+.rooms-wrapper .rooms .room-single__img {
+  width: 100%;
+  height: auto;
+}
+
+.rooms-wrapper .rooms .room-single__icon {
+  width: 40px;
+  height: 40px;
+  padding: 50px 20px 0 0;
+}
+
+.rooms-wrapper .rooms .room-single__button-wrapper {
+  width: 100%;
+  text-align: right;
+}
+
+.rooms-wrapper .rooms .room-single__button {
+  background-color: #00260C;
+  border: 1px solid #00260C;
+  color: #fff;
+  padding: 15px 40px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-align: right;
+}
+
+.rooms-wrapper .rooms .room-single__button:hover {
+  color: #00260C;
+  background-color: transparent;
+}
+
+.white-background {
+  background-color: white;
+}
+
+.header-restaurant {
+  color: #fff;
+  background: url("../Assets/restaurant_h.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 800px;
+}
+
+.header-restaurant__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 200px;
+  padding-bottom: 350px;
+}
+
+.header-restaurant__title {
+  font-size: 25px;
+}
+
+.header-restaurant__subtitle {
+  font-family: "Limber";
+  font-size: 90px;
+}
+
+.restaurant-wrapper {
+  padding-bottom: 60px;
+}
+
+.restaurant-wrapper .restaurant-navi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px;
+}
+
+.restaurant-wrapper .restaurant-navi__p {
+  padding-left: 10px;
+}
+
+.restaurant-wrapper .restaurant-navi__a {
+  text-decoration: none;
+  color: black;
+}
+
+.restaurant-wrapper .restaurant-menu {
+  background-color: white;
+  -webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.restaurant-wrapper .restaurant-menu .menu-title {
+  font-family: "Limber";
+  font-size: 70px;
+  color: #00260C;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.restaurant-wrapper .restaurant-menu .menu-category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px;
+}
+
+.restaurant-wrapper .restaurant-menu .menu-category .menu-single-category {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 45%;
+  margin-bottom: 40px;
+  padding-right: 20px;
+}
+
+.restaurant-wrapper .restaurant-menu .menu-category .menu-single-category__title {
+  font-size: 25px;
+  padding: 20px 0;
+  font-weight: 300;
+}
+
+.restaurant-wrapper .restaurant-menu .menu-category .menu-single-category__underline {
+  width: 100%;
+  border-bottom: #B9C4BD dotted 1px;
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+
+.restaurant-wrapper .restaurant-menu .menu-category .menu-single-category__name {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding-right: 10px;
+}
+
+.restaurant-wrapper .restaurant-menu .menu-category .menu-single-category__price {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding-left: 10px;
+}
+
+.restaurant-wrapper .restaurant-menu .menu-category .menu-single-category__position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+}
+
+.request-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../Assets/request.jpg);
+  margin-top: 40px;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 800px;
+}
+
+.request-wrapper .request {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  height: 70%;
+}
+
+.request-wrapper .request button {
+  background-color: #00260C;
+  border: 1px solid #00260C;
+  color: #fff;
+  padding: 15px 40px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-align: right;
+  margin-top: 50px;
+}
+
+.request-wrapper .request button:hover {
+  color: #00260C;
+  background-color: transparent;
+}
+
+.request-wrapper .request h1 {
+  font-family: "Limber";
+  font-size: 70px;
+  color: #00260C;
+  padding-bottom: 20px;
+}
+
+.request-wrapper .request h2 {
+  color: #00260C;
+  margin-bottom: -20px;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.request-wrapper .request .request-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.request-wrapper .request .request-form__personal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.request-wrapper .request .request-form__name {
+  width: 46%;
+}
+
+.request-wrapper .request .request-form__name input {
+  width: 97%;
+  padding: 15px;
+}
+
+.request-wrapper .request .request-form__email {
+  width: 46%;
+}
+
+.request-wrapper .request .request-form__email input {
+  width: 97%;
+  padding: 15px;
+}
+
+.request-wrapper .request .request-form__message {
+  width: 100%;
+  overflow: hidden;
+}
+
+.request-wrapper .request .request-form__message input {
+  width: 100%;
+  padding: 15px 0 100px 15px;
+}
+
+.request-wrapper .request .request-form input {
+  background-color: #F1F3F2;
+  border: none;
 }
 /*# sourceMappingURL=index.css.map */

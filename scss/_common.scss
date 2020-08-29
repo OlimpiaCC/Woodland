@@ -22,12 +22,24 @@
     flex-direction: row-reverse;
 }
 
+
+
 button:hover {
 
     color: $main_color;
     background-color: transparent;
 
 
+}
+
+button:focus {
+
+    outline: none;
+}
+
+input:focus {
+
+    outline: none;
 }
 
 .menu-active {

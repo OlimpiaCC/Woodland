@@ -1,0 +1,128 @@
+.header-rooms {
+
+    color: $white;
+    background: url("../Assets/ourrooms.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 800px;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 200px;
+        padding-bottom: 350px;
+    }
+
+    &__title {
+        font-size: 25px;
+    }
+
+    &__subtitle {
+        font-family: "Limber";
+        font-size: 90px;
+    }
+}
+
+
+.rooms-wrapper {
+    background-color: $grey_background;
+    padding-bottom: 40px;
+
+    .rooms-navi {
+        display: flex;
+        padding: 40px;
+
+        &__p {
+            padding-left: 10px
+        }
+
+        &__a {
+            text-decoration: none;
+            color: black;
+        }
+    }
+
+    .rooms {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        // flex-direction: column;
+
+
+
+        .room-single {
+            display: flex;
+            flex-direction: column;
+            width: 48%;
+            background-color: white;
+            box-shadow: 0 2px 20px 0 rgba($color: #000000, $alpha: 0.10);
+            margin-bottom: 50px;
+
+
+
+            &__main {
+                padding: 40px;
+            }
+
+            &__header {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 25px;
+                font-size: 25px;
+            }
+
+
+            &__img {
+                width: 100%;
+                height: auto;
+            }
+
+
+
+            &__icon {
+                width: 40px;
+                height: 40px;
+                padding: 50px 20px 0 0;
+            }
+
+            &__button-wrapper {
+                width: 100%;
+                text-align: right;
+            }
+
+            &__button {
+                background-color: $main-color;
+                border: 1px solid $main-color;
+                color: $white;
+                padding: 15px 40px;
+                cursor: pointer;
+                transition: 0.3s;
+                text-align: right;
+
+                &:hover {
+                    color: $main_color;
+                    background-color: transparent;
+                }
+            }
+
+
+
+
+        }
+
+
+
+    }
+}
+
+
+
+
+
+
+
+
+.white-background {
+    background-color: white;
+}
