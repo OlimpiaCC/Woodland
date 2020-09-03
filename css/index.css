@@ -960,6 +960,8 @@ input:focus {
   -webkit-transition: 0.3s;
   transition: 0.3s;
   text-align: right;
+  font-size: 14px;
+  text-decoration: none;
 }
 
 .rooms-wrapper .rooms .room-single__button:hover {
