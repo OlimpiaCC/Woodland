@@ -1129,6 +1129,15 @@ input:focus {
   height: 70%;
 }
 
+.request-wrapper .request__button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .request-wrapper .request button {
   background-color: #00260C;
   border: 1px solid #00260C;
@@ -1213,5 +1222,180 @@ input:focus {
 .request-wrapper .request .request-form input {
   background-color: #F1F3F2;
   border: none;
+}
+
+.header-rooms {
+  color: #fff;
+  background: url("../Assets/ourrooms.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 800px;
+}
+
+.header-rooms__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 200px;
+  padding-bottom: 350px;
+}
+
+.header-rooms__title {
+  font-size: 25px;
+}
+
+.header-rooms__subtitle {
+  font-family: "Limber";
+  font-size: 90px;
+}
+
+.booking-wrapper {
+  background-color: #F9F9F9;
+}
+
+.booking-wrapper .booking-navi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px;
+}
+
+.booking-wrapper .booking-navi__a {
+  text-decoration: none;
+  color: black;
+  padding-right: 10px;
+}
+
+.booking {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 60px;
+  background-color: white;
+  -webkit-box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+.booking .booking-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.booking .booking-main .booking-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 70%;
+  padding: 20px 40px 40px 40px;
+  line-height: 40px;
+}
+
+.booking .booking-main .booking-text__header {
+  padding: 50px 0 20px 0;
+  font-weight: 200;
+  font-size: 30px;
+}
+
+.booking .booking-main .booking-text__paragraph {
+  font-size: 14px;
+}
+
+.booking .booking-main .booking-text__icon {
+  width: 40px;
+  height: 40px;
+  padding: 20px 20px 0 0;
+}
+
+.booking .booking-main .booking-calendar {
+  background-image: url("./../Assets/booking.jpg");
+  width: 30%;
+  color: white;
+  padding: 70px 40px 40px 40px;
+}
+
+.booking .booking-main .booking-calendar__title {
+  font-size: 14px;
+  padding: 40px 0 10px 0;
+}
+
+.booking .booking-main .booking-calendar input {
+  width: 90%;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: white;
+}
+
+.booking .booking-main .booking-calendar ::-webkit-input-placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+.booking .booking-main .booking-calendar :-ms-input-placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+.booking .booking-main .booking-calendar ::-ms-input-placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+.booking .booking-main .booking-calendar ::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+.booking .booking-main .booking-calendar__price {
+  padding-top: 50px;
+}
+
+.booking .booking-main .booking-calendar__button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.booking .booking-main .booking-calendar__button {
+  background-color: white;
+  border: 1px solid white;
+  color: #00260C;
+  padding: 15px 40px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-align: right;
+  margin-top: 100px;
+}
+
+.booking .booking-main .booking-calendar__button:hover {
+  color: white;
+  background-color: transparent;
+}
+
+.white-background {
+  background-color: white;
 }
 /*# sourceMappingURL=index.css.map */
