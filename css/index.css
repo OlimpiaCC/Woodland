@@ -1400,4 +1400,214 @@ input:focus {
 .white-background {
   background-color: white;
 }
+
+.header-outdoor {
+  color: #fff;
+  background: url("../Assets/outdoor2.jpg") no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 800px;
+}
+
+.header-outdoor__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 200px;
+  padding-bottom: 350px;
+}
+
+.header-outdoor__title {
+  font-size: 25px;
+}
+
+.header-outdoor__subtitle {
+  font-family: "Limber";
+  font-size: 90px;
+}
+
+.outdoor-wrapper {
+  background-color: #F9F9F9;
+}
+
+.outdoor-wrapper .features-slider-wrapper .features-slider .slide {
+  margin: 0;
+}
+
+.outdoor-wrapper .outdoor-navi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 40px;
+}
+
+.outdoor-wrapper .outdoor-navi__a {
+  text-decoration: none;
+  color: black;
+  padding-right: 10px;
+}
+
+.features-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 260px;
+}
+
+.features-slider .slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+          box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.08);
+  background-color: white;
+  width: 24%;
+}
+
+.adventure-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(../Assets/adventure.jpg);
+  margin-top: 40px;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 800px;
+}
+
+.adventure-wrapper .adventure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  height: 70%;
+}
+
+.adventure-wrapper .adventure__button-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.adventure-wrapper .adventure button {
+  background-color: #00260C;
+  border: 1px solid #00260C;
+  color: #fff;
+  padding: 15px 40px;
+  cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-align: right;
+  margin-top: 50px;
+}
+
+.adventure-wrapper .adventure button:hover {
+  color: #00260C;
+  background-color: transparent;
+}
+
+.adventure-wrapper .adventure h1 {
+  font-family: "Limber";
+  font-size: 70px;
+  color: #00260C;
+  padding-bottom: 20px;
+}
+
+.adventure-wrapper .adventure h2 {
+  color: #00260C;
+  margin-bottom: -20px;
+  margin-top: 50px;
+  font-size: 20px;
+}
+
+.adventure-wrapper .adventure .adventure-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+}
+
+.adventure-wrapper .adventure .adventure-form__personal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0;
+  overflow: hidden;
+}
+
+.adventure-wrapper .adventure .adventure-form__name {
+  width: 46%;
+}
+
+.adventure-wrapper .adventure .adventure-form__name input {
+  width: 97%;
+  padding: 15px;
+}
+
+.adventure-wrapper .adventure .adventure-form__email {
+  width: 46%;
+}
+
+.adventure-wrapper .adventure .adventure-form__email input {
+  width: 97%;
+  padding: 15px;
+}
+
+.adventure-wrapper .adventure .adventure-form__message {
+  width: 100%;
+  overflow: hidden;
+}
+
+.adventure-wrapper .adventure .adventure-form__message input {
+  width: 100%;
+  padding: 15px 0 100px 15px;
+}
+
+.adventure-wrapper .adventure .adventure-form input {
+  background-color: #F1F3F2;
+  border: none;
+}
 /*# sourceMappingURL=index.css.map */
