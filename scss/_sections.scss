@@ -4,6 +4,7 @@
 
     &__opening {
         width: 30%;
+        padding: 0 20px;
 
         &-welcome {
             font-family: 'Limber';
@@ -35,10 +36,11 @@
 
 
 .article {
-    background-color: $white;
+    background-color: #F9F9F9;
     box-shadow: 0 2px 20px 0 rgba($color: #000000, $alpha: 0.10);
     margin-top: 50px;
     margin-bottom: 50px;
+
 
     &-single {
         display: flex;
@@ -96,6 +98,8 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        margin-bottom: -1px;
+
     }
 
 }

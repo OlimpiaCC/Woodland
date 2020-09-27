@@ -1,10 +1,11 @@
 .contact {
-    background-color: $grey_background;
+    &__home {
+        background-color: $grey_background;
+    }
 }
 
 .contact-content {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding: 40px 20px;
 
 
     &__title {
@@ -36,4 +37,30 @@
 .map {
     overflow: hidden;
     margin-top: 60px;
+}
+
+.header-contact {
+
+    color: $white;
+    background: url("../Assets/contact.jpg") no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 800px;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 200px;
+        padding-bottom: 350px;
+    }
+
+    &__title {
+        font-size: 25px;
+    }
+
+    &__subtitle {
+        font-family: "Limber";
+        font-size: 90px;
+    }
 }

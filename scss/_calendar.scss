@@ -26,13 +26,30 @@
 
         &-number {
             font-size: 40px;
-
-
+            border: none;
+            width: 28%;
+            text-align: center;
         }
 
 
 
         &-in {
+            position: relative;
+            width: 15%;
+            padding-left: 5px;
+            text-align: center;
+
+            &:after {
+                padding: 6px 0;
+                content: "";
+                background: url(./../Assets/arrow-d.svg) no-repeat center;
+                width: 13px;
+                height: 18px;
+                position: absolute;
+                top: 42%;
+                left: 35%;
+                pointer-events: none;
+            }
 
             &-arrow {
                 display: flex;
@@ -48,12 +65,20 @@
 
             &-month {
                 font-size: 12px;
-                padding-left: 10px;
                 padding-top: 10px;
             }
 
             &-icon {
-                padding-left: 15px;
+                padding-left: 22px;
+                width: 5%;
+                border: none;
+                cursor: pointer;
+
+                &:focus {
+                    outline: none;
+                }
+
+
             }
         }
     }

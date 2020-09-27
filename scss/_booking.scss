@@ -27,17 +27,21 @@
 
 .booking-wrapper {
     background-color: $grey_background;
+    padding-bottom: 20px;
 
     .booking-navi {
-        display: flex;
         padding: 40px;
+
+        &-container {
+            display: flex;
+
+        }
 
 
         &__a {
             text-decoration: none;
             color: black;
             padding-right: 10px
-
         }
     }
 }

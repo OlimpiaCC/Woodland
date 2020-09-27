@@ -1,0 +1,50 @@
+.qs-datepicker-container {
+    width: 380px;
+    top: 101px !important;
+    left: -142px !important;
+    box-shadow: none !important;
+    border: none;
+
+    .qs-controls {
+        margin: 15px 0 5px 0;
+        background-color: transparent;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        
+ 
+
+        .qs-month-year {
+            color: $main_color;
+            font-size: 18px;
+
+            .qs-month, .qs-year {
+                font-weight: 300;
+            }
+        }
+    }
+
+    .qs-square {
+        color: $main_color;
+        font-weight: 200;
+        margin: 5px 0;
+        transition: .1s;
+
+
+        &:hover {
+            background: $main_color !important;
+            color: white;
+        }
+    }
+
+    .qs-active {
+        background: $main_color !important;
+        color: white;
+
+    }
+
+    .qs-day {
+        font-weight: 300;
+    }
+
+}
+

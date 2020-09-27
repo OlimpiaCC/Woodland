@@ -28,6 +28,11 @@
     justify-content: flex-end;
     padding: 30px;
 
+    &__container {
+        display: flex;
+        justify-content: flex-end;
+    }
+
     &__phone {
         display: flex;
 
@@ -73,13 +78,13 @@
             color: $white;
             padding-left: 20px;
             padding-right: 20px;
-         
+
         }
     }
 }
 
 .main-wrapper {
     // height: 1000vh;
-    background-color: $grey_background;
+    // background-color: $grey_background;
 
 }

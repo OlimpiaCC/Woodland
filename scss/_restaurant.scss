@@ -30,8 +30,11 @@
 
 
     .restaurant-navi {
-        display: flex;
         padding: 40px;
+
+        &-container {
+            display: flex;
+        }
 
         &__p {
             padding-left: 10px

@@ -6,6 +6,10 @@
     background-attachment: fixed;
     height: 800px;
 
+    &-container {
+        display: flex;
+    }
+
     &__text {
         display: flex;
         flex-direction: column;
@@ -26,14 +30,17 @@
 
 
 .paragraph-wrapper {
-
-    display: flex;
     padding-top: 40px;
     width: 100%;
+
+    &-container {
+            display: flex;
+    }
 
     .paragraph-opening {
         width: 35%;
         padding-top: 35px;
+        padding-left: 20px;;
 
         &__title-top {
             font-family: 'Limber';
@@ -53,6 +60,7 @@
     .paragraph-text {
         width: 65%;
         padding-top: 40px;
+        padding-right: 20px;
         line-height: 40px;
     }
 
