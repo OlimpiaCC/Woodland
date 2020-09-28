@@ -137,7 +137,7 @@ input:focus {
   padding-right: 20px;
 }
 
-.main-wrapper {
+.main-wrapper.home {
   background-color: #F9F9F9;
 }
 
@@ -428,7 +428,7 @@ input:focus {
   left: -14%;
 }
 
-.contact {
+.contact__home {
   background-color: #F9F9F9;
 }
 
@@ -927,10 +927,6 @@ input:focus {
 }
 
 .home {
-  background-color: #F9F9F9;
-}
-
-.contact__home {
   background-color: #F9F9F9;
 }
 
