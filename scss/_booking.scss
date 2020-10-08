@@ -29,6 +29,8 @@
     background-color: $grey_background;
     padding-bottom: 20px;
 
+
+
     .booking-navi {
         padding: 40px;
 
@@ -48,16 +50,57 @@
 
 .booking {
     display: flex;
-    flex-direction: column;
-    margin-bottom: 60px;
-    background-color: white;
-    box-shadow: 0 2px 20px 0 rgba($color: #000000, $alpha: 0.10);
+    flex-direction: row;
+
+    @include breakpoint(bigTablet) {
+        padding-left: 5%;
+        padding-right: 5%;
+
+    }
+
+    @include breakpoint(bigMobile) {
+        flex-direction: column-reverse;
+
+    }
+
+
+    &__input {
+        position: relative;
+
+        &-result {
+            position: absolute;
+            top: 22%;
+            left: 10px;
+            pointer-events: none;
+        }
+    }
+
+
+
 
 
 
     .booking-main {
         display: flex;
+        flex-direction: column;
+        background-color: white;
+        box-shadow: 0 2px 20px 0 rgba($color: #000000, $alpha: 0.10);
+        width: 65%;
+
+        @include breakpoint(bigMobile) {
+            width: 100%;
+
+
+        }
+
+        &__img {
+            background: url("../Assets/single.jpg") no-repeat center;
+            height: 400px;
+
+        }
+
         // height: 600px;
+
 
 
 
@@ -65,7 +108,6 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            width: 70%;
             padding: 20px 40px 40px 40px;
             line-height: 40px;
 
@@ -89,62 +131,104 @@
             }
         }
 
-        .booking-calendar {
-            background-image: url("./../Assets/booking.jpg");
-            width: 30%;
-            color: white;
-            padding: 70px 40px 40px 40px;
 
-            &__title {
-                font-size: 14px;
-                padding: 40px 0 10px 0;
-            }
+    }
 
+    .booking-calendar {
+        background: url("../Assets/booking.jpg") no-repeat;
+        background-size: cover;
+        width: 30%;
+        height: 600px;
+        color: white;
+        padding: 40px;
+        margin-left: 2%;
 
+        @include breakpoint(bigMobile) {
+            width: 90%;
+            margin-left: 0;
+            padding-left: 5%;
+            padding-right: 5%;
+            margin-bottom: 40px;
+        }
 
-            input {
-                width: 90%;
-                padding: 10px;
-                background-color: transparent;
-                border: 1px solid white;
-                color: white;
-            }
+        & .qs-datepicker-container {
+            top: 41px !important;
+            left: -40px !important;
+            background: $main_color !important;
+            color: $white !important;
+        }
 
-            ::placeholder {
-                color: white;
-                opacity: 0.7;
-            }
-
-            &__price {
-                padding-top: 50px;
-            }
-
-            &__button-wrapper {
-                display: flex;
-                justify-content: center;
-            }
-
-            &__button {
-                background-color: white;
-                border: 1px solid white;
-                color: $main-color;
-                padding: 15px 40px;
-                cursor: pointer;
-                transition: 0.3s;
-                text-align: right;
-                margin-top: 100px;
-
-                &:hover {
-                    color: white;
-                    background-color: transparent;
-                }
-
-            }
-
-
-
+        .qs-controls .qs-month-year {
+            color: $white !important;
 
         }
+
+        ;
+
+        .qs-square {
+            transition: .1s;
+            color: $white !important;
+
+
+            &:hover {
+                background: $white !important;
+                color: $main_color !important;
+            }
+        }
+
+
+
+
+
+        &__title {
+            font-size: 14px;
+            padding: 40px 0 10px 0;
+        }
+
+
+
+        input {
+            width: 90%;
+            padding: 10px;
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+        }
+
+        ::placeholder {
+            color: white;
+            opacity: 0.7;
+        }
+
+        &__price {
+            padding-top: 50px;
+        }
+
+        &__button-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        &__button {
+            background-color: white;
+            border: 1px solid white;
+            color: $main-color;
+            padding: 15px 40px;
+            cursor: pointer;
+            transition: 0.3s;
+            text-align: right;
+            margin-top: 50px;
+
+            &:hover {
+                color: white;
+                background-color: transparent;
+            }
+
+        }
+
+
+
+
     }
 }
 

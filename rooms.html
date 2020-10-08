@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Our rooms</title>
+    <link rel="stylesheet" href="https://unpkg.com/js-datepicker/dist/datepicker.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
@@ -13,7 +14,6 @@
 
 <body>
     <div class="main-wrapper">
-
         <header class="header-rooms">
             <div class="menu-top">
                 <div class="container menu-top__container">
@@ -37,7 +37,7 @@
                             <a href="/Woodland/about.html" class="menu__list-position">About us</a>
                             <a href="/Woodland/rooms.html" class="menu__list-position  menu-active">Rooms</a>
                             <a href="/Woodland/restaurant.html" class="menu__list-position">Restaurant</a>
-                            <a href="/Woodland/contact.html" class="menu__list-position">Contact</a>
+                            <a href="" class="menu__list-position">Contact</a>
 
                         </div>
                     </div>
@@ -53,17 +53,54 @@
                 </div>
             </div>
         </header>
-
         <section class="rooms-wrapper">
-
             <div class="rooms-navi ">
                 <div class="rooms-navi-container container">
                     <a href="/Woodland" class="rooms-navi__a">Home</a>
                     <p class="rooms-navi__p"> - Our rooms</p>
                 </div>
             </div>
-
             <div class="rooms container">
+
+                <div class="calendar container">
+                    <div class="date">
+                        <p class="date__check">Check-in</p>
+                        <div class="date__box">
+                            <div class="date__box-number date__box-number-start">15</div>
+                            <div class="date__box-in">
+                                <p class="date__box-in-month date__box-in-month-start">AUG</p>
+                                <input class="date__box-in-icon calendar3" style="color: transparent" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="date">
+                        <p class="date__check">Check-out</p>
+                        <div class="date__box">
+                            <div class="date__box-number date__box-number-end">15</div>
+                            <div class="date__box-in">
+                                <p class="date__box-in-month date__box-in-month-end">AUG</p>
+                                <input class="date__box-in-icon calendar4" style="color: transparent" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="date">
+                        <p class="date__check">Guests</p>
+                        <div class="date__box">
+                            <p class="date__box-number guest-counter">3</p>
+                            <div class="date__box-in-arrow">
+
+                                <img src="./Assets/arrow-u.svg" alt="" class="date__box-in-arrow-icon arrow-up">
+
+                                <img src="./Assets/arrow-d.svg" alt="" class="date__box-in-arrow-icon arrow-down">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="buttonbox">
+                        <button>Check availability</button>
+                    </div>
+                </div>
 
 
                 <div class="room-single">
@@ -165,35 +202,35 @@
 
 
             </div>
-
-
-
-
         </section>
-        <div class="contact container">
-            <div class="contact-content ">
-                <p class="contact-content__title">Contact us</p>
-                <p class="contact-content__text">Don't hesitate to use the form our contact details to get in touch.:
-                </p>
-                <div class="contact-content__details">
-                    <div class="contact-content__details-container">
-                        <img src="./Assets/phone.svg" alt="" class="contact-content__details-container-icon">
-                        <p class="contact-content__details-container-text">+44 7926591530</p>
-                    </div>
+        <div class="contact white">
+            <div class="container">
+                <div class="contact-content ">
+                    <p class="contact-content__title">Contact us</p>
+                    <p class="contact-content__text">Don't hesitate to use the form our contact details to get in
+                        touch.:
+                    </p>
+                    <div class="contact-content__details">
+                        <div class="contact-content__details-container">
+                            <img src="./Assets/phone.svg" alt="" class="contact-content__details-container-icon">
+                            <p class="contact-content__details-container-text">+44 7926591530</p>
+                        </div>
 
-                    <div class="contact-content__details-container">
-                        <img src="./Assets/map.svg" alt="" class="contact-content__details-container-icon">
-                        <p class="contact-content__details-container-text">ul. Lesna, 87-987 Tlen</p>
-                    </div>
+                        <div class="contact-content__details-container">
+                            <img src="./Assets/map.svg" alt="" class="contact-content__details-container-icon">
+                            <p class="contact-content__details-container-text">ul. Lesna, 87-987 Tlen</p>
+                        </div>
 
-                    <div class="contact-content__details-container">
-                        <img src="./Assets/mail.svg" alt="" class="contact-content__details-container-icon">
-                        <p class="contact-content__details-container-container">olimpia.czech@gmail.com</p>
+                        <div class="contact-content__details-container">
+                            <img src="./Assets/mail.svg" alt="" class="contact-content__details-container-icon">
+                            <p class="contact-content__details-container-container">olimpia.czech@gmail.com</p>
+                        </div>
                     </div>
-                </div>
-                <div class="map container">
-                    <iframe width="100%" height="500px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                        src="https://www.openstreetmap.org/export/embed.html?bbox=18.256933093070987%2C53.6203707628606%2C18.26460421085358%2C53.62297022292572&amp;layer=mapnik&amp;marker=53.62167051290445%2C18.26076865196228"></iframe>
+                    <div class="map container">
+                        <iframe width="100%" height="500px" frameborder="0" scrolling="no" marginheight="0"
+                            marginwidth="0"
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=18.256933093070987%2C53.6203707628606%2C18.26460421085358%2C53.62297022292572&amp;layer=mapnik&amp;marker=53.62167051290445%2C18.26076865196228"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -201,15 +238,39 @@
             <div class="container">
                 <div class="footer__container ">
                     <img src="./Assets/facebook.svg" alt="">
-                    <div class="footer__container-text">
-                        <p class="rodo">RODO</p>
-                        <p class="cookies">Cookies</p>
+                    <div class="footer__container__text">
+                        <p>Woodland 2020</p>
+                        <a href="">RODO</a>
+                        <a href="">Cookies</a>
+
                     </div>
                 </div>
             </div>
         </div>
 
     </div>
+
+    <script src="https://unpkg.com/js-datepicker"></script>
+    <script src="./js/index.js"></script>
+    <script>
+        datePicker('start');
+        datePicker('end');
+        const picker1 = datepicker('.calendar3', {
+            formatter: (input, date, instance) => {
+                getMonthFromDate(date, 'start');
+                localStorage.setItem("start", date);
+            },
+            customDays: ['S', 'M', 'T', 'W', 'T', 'F', 'S']
+        }, )
+        const picker2 = datepicker('.calendar4', {
+            formatter: (input, date, instance) => {
+                getMonthFromDate(date, 'end');
+                localStorage.setItem("end", date);
+            },
+            customDays: ['S', 'M', 'T', 'W', 'T', 'F', 'S']
+        }, )
+    </script>
+    <script src="./js/menu.js"></script>
 
 </body>
 

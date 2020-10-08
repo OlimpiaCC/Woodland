@@ -6,6 +6,10 @@
     background-attachment: fixed;
     height: 800px;
 
+    @include breakpoint(mobileonly) {
+        height: 700px;
+    }
+
     &-container {
         display: flex;
     }
@@ -16,6 +20,13 @@
         align-items: center;
         padding-top: 200px;
         padding-bottom: 350px;
+
+
+        @include breakpoint(mobileonly) {
+            padding-top: 166px;
+        }
+
+
     }
 
     &__title {
@@ -34,18 +45,34 @@
     width: 100%;
 
     &-container {
-            display: flex;
+        display: flex;
+
+        @include breakpoint(bigTablet) {
+            flex-direction: column;
+            align-items: center;
+        }
     }
 
     .paragraph-opening {
         width: 35%;
         padding-top: 35px;
-        padding-left: 20px;;
+        padding-left: 20px;
+
+        @include breakpoint(bigTablet) {
+            width: 90%;
+            text-align: center;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
 
         &__title-top {
             font-family: 'Limber';
             font-size: 80px;
             color: #D9DDDB;
+
+            @include breakpoint(bigTablet) {
+                font-size: 60px;
+            }
         }
 
         &__title-bottom {
@@ -54,6 +81,10 @@
             color: $main-color;
             line-height: 45px;
             margin-top: -10px;
+
+
+            @include breakpoint(bigTablet) {}
+
         }
     }
 
@@ -62,6 +93,12 @@
         padding-top: 40px;
         padding-right: 20px;
         line-height: 40px;
+
+        @include breakpoint(bigTablet) {
+            width: 90%;
+            padding-left: 5%;
+            padding-right: 5%;
+        }
     }
 
 }
@@ -77,12 +114,11 @@
 
 .features-wrapper {
     width: 100%;
-    height: 800px;
+    // height: 800px;
     background-color: $grey_background;
     padding-bottom: 40px;
+
 }
-
-
 
 .features-content {
     display: flex;
@@ -91,15 +127,46 @@
     margin-top: 50px;
     margin-bottom: 30px;
 
+    @include breakpoint(bigTablet) {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    @include breakpoint(bigMobile) {
+        flex-direction: column;
+    }
+
     .features_img {
-        width: 50%;
-        height: 50%;
+        height: 480px;
+        overflow: hidden;
+
+        @include breakpoint(mobileonly) {
+
+            height: auto;
+
+        }
+
+        img {
+            height: 100%;
+
+            @include breakpoint(mobileonly) {
+                width: 100%;
+                height: auto;
+
+            }
+        }
+
     }
 
     .features-main {
         width: 50%;
-        height: 50%;
         padding: 40px;
+
+        @include breakpoint(bigMobile) {
+            width: 90%;
+            padding-right: 5%;
+        }
 
 
         &__title {
@@ -110,15 +177,28 @@
         &__copy {
             line-height: 35px;
             padding: 40px 0;
+
+            @include breakpoint(bigMobile) {
+                width: 90%;
+                padding-right: 5%;
+            }
         }
 
         &__button {
+            text-decoration: none;
+            font-size: 15px;
             background-color: $main-color;
             border: 1px solid $main-color;
             color: $white;
             padding: 15px 40px;
             cursor: pointer;
             transition: 0.3s;
+
+            &:hover {
+                border: 1px solid $main_color;
+                color: $main_color;
+                background-color: transparent;
+            }
 
 
         }
@@ -128,11 +208,21 @@
 .features-slider-wrapper {
     position: relative;
 
+    @include breakpoint(bigTablet) {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
     .tns-nav {
         display: flex;
         position: absolute;
-        bottom: -15%;
+        bottom: -10%;
         left: 48.2%;
+
+        @include breakpoint(newMobile) {
+            display: none;
+        }
 
         button {
             background-color: #B9C4BD;
@@ -199,8 +289,9 @@
         height: 260px;
 
 
-
-        // width: 100%;
+        @include breakpoint(newMobile) {
+            height: 180px;
+        }
 
         .slide {
             display: flex;
@@ -209,26 +300,48 @@
             align-items: center;
             box-shadow: 0 2px 10px 0 rgba($color: #000000, $alpha: 0.08);
             background-color: white;
-            margin: 10px;
+            margin: 10px !important;
+
+            @include breakpoint(newMobile) {
+                height: 150px;
+            }
 
             p {
                 padding-top: 40px;
                 font-weight: 400;
                 text-transform: uppercase;
+
+                @include breakpoint(newMobile) {
+                    padding-top: 30px;
+                }
             }
 
             img {
                 width: 40%;
                 height: 40%;
+
+                @include breakpoint(newMobile) {
+                    width: 50%;
+                    height: 50%;
+                }
             }
         }
     }
 }
 
-
 .staff-wrapper {
     background-color: white;
     padding-bottom: 60px;
+
+
+    @include breakpoint(phablet) {
+        // margin-top: 400px;
+    }
+
+    @include breakpoint(mobileonly) {
+        // margin-top: 125px;
+    }
+
 
     .staff-title {
         font-size: 70px;
@@ -236,11 +349,21 @@
         color: $main-color;
         text-align: center;
         padding: 60px;
+
+        @include breakpoint(mobileonly) {
+            padding-top: 20px;
+        }
     }
 
     .staff-pictures {
         display: flex;
         justify-content: space-between;
+
+        @include breakpoint(bigTablet) {
+            flex-wrap: wrap;
+            justify-content: center;
+
+        }
 
 
         .staff-single {
@@ -248,6 +371,24 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            img {
+                @include breakpoint(bigTablet) {
+                    width: 70%;
+                    height: auto;
+                }
+
+                @include breakpoint(tablet) {
+                    padding: 0 40px;
+
+                }
+
+
+                @include breakpoint(bigMobile) {
+                    padding: 0 10px;
+
+                }
+            }
 
             &__name {
                 font-weight: 400;
@@ -268,13 +409,21 @@
     background: url(../Assets/testimonials.jpg) no-repeat center;
     background-size: cover;
     height: 700px;
-    width: 100%;
+    width: 100vw;
 
     .testimonials {
         position: relative;
         max-width: 800px;
         margin: 0 auto;
         width: 100%;
+
+        @include breakpoint(bigTablet) {
+            padding-right: 5%;
+            padding-left: 5%;
+            width: 80%;
+
+        }
+
 
 
         .tns-nav {

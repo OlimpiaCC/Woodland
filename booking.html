@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Our rooms</title>
+    <title>Your reservation</title>
+    <link rel="stylesheet" href="https://unpkg.com/js-datepicker/dist/datepicker.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.3/tiny-slider.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/index.css">
@@ -37,7 +38,7 @@
                             <a href="/Woodland/about.html" class="menu__list-position">About us</a>
                             <a href="/Woodland/rooms.html" class="menu__list-position menu-active">Rooms</a>
                             <a href="/Woodland/restaurant.html" class="menu__list-position">Restaurant</a>
-                            <a href="/Woodland/contact.html" class="menu__list-position">Contact</a>
+                            <a href="" class="menu__list-position">Contact</a>
 
                         </div>
                     </div>
@@ -47,13 +48,12 @@
             </div>
             <div>
                 <div class="header-about__text container">
-                    <h1 class="header-about__title">About our </h1>
-                    <h2 class="header-about__subtitle">Rooms</h2>
+                    <h1 class="header-about__title">Your</h1>
+                    <h2 class="header-about__subtitle">Reservation</h2>
                 </div>
             </div>
         </header>
         <section class="booking-wrapper">
-
             <div class="booking-navi">
                 <div class="container booking-navi-container">
                     <a href="/Woodland" class="booking-navi__a">Home </a>
@@ -61,19 +61,20 @@
                     <p class="booking-navi__p">- Single room</p>
                 </div>
             </div>
-
             <div class="booking-wrapper container">
-
-
                 <div class="booking">
-                    <img src="./Assets/single.jpg" alt="" class="booking__img">
                     <div class="booking-main">
+                        <div class="booking-main__img"></div>
+
 
                         <div class="booking-text">
                             <h2 class="booking-text__header">Single room</h2>
-                            <p class="booking-text__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Etiam odio lorem, iaculis non felis vel, faucibus efficitur dui. Aliquam erat volutpat.
-                                Quisque hendrerit massa nec lobortis mollis. Nunc eu eros efficitur, convallis enim ac,
+                            <p class="booking-text__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit.
+                                Etiam odio lorem, iaculis non felis vel, faucibus efficitur dui. Aliquam erat
+                                volutpat.
+                                Quisque hendrerit massa nec lobortis mollis. Nunc eu eros efficitur, convallis enim
+                                ac,
                                 ultricies nisi. Lorem ipsum dolor sit amet, consectetur adipiscing.
                             </p>
                             <div class="booking-text__icons">
@@ -91,102 +92,117 @@
 
 
                             <h2 class="booking-text__header">Cancellation</h2>
-                            <p class="booking-text__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            <p class="booking-text__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit.
                                 Etiam odio lorem, iaculis non felis vel, faucibus efficitur dui.
                             </p>
 
                         </div>
 
-                        <div class="booking-calendar">
+
+                    </div>
+                    <div class="booking-calendar">
+                        <h2 class="booking-calendar__header">Your reservation</h2>
+                        <form action="" class="booking-calendar__form">
+                            <p class="booking-calendar__title">Check-in date</p>
+                            <div id="date-picked" class="booking-calendar__check">
+                                <input type="text" class="calendar5 booking__input booking__input-start"
+                                    style="color: transparent" />
+                                <p class="date__box-in-start booking__input-result">Thursday, October 6, 2020</p>
+                            </div>
+
+                            <p class="booking-calendar__title">Check-out date</p>
+                            <div class="booking-calendar__check">
+                                <input type="text" class="calendar6 booking__input booking__input-end"
+                                    style="color: transparent" />
+                                <p class="date__box-in-end booking__input-result">Thursday, October 6, 2020</p>
+                            </div>
 
 
+                            <p class=" booking-calendar__title">Guests</p>
+                            <div class="booking-calendar__number"> <input type="text" placeholder="2" class="">
+                            </div>
 
+                            <p class="booking-calendar__price">Your price: $40</p>
 
-                            <h2 class="booking-calendar__header">Your reservation</h2>
-                            <form action="" class="booking-calendar__form">
-                                <p class="booking-calendar__title">Check-in date</p>
-                                <div id="date-picked" class="booking-calendar__check"> <input type="text"
-                                        placeholder="Mon, 24 AUG 2020" class=""></div>
+                            <div class="booking-calendar__button-wrapper">
 
-                                <p class="booking-calendar__title">Check-out date</p>
-                                <div class="booking-calendar__check"> <input type="text" placeholder="Mon, 24 AUG 2020"
-                                        class=""></div>
+                                <button class="booking-calendar__button">Book now</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="contact white">
 
-
-                                <p class="booking-calendar__title">Guests</p>
-                                <div class="booking-calendar__number"> <input type="text" placeholder="2" class="">
-                                </div>
-
-                                <p class="booking-calendar__price">Your price: $40</p>
-
-                                <div class="booking-calendar__button-wrapper">
-
-                                    <button class="booking-calendar__button">Book now</button>
-                                </div>
-
-
-                            </form>
-
-
-
-
+            <div class="container">
+                <div class="contact-content ">
+                    <p class="contact-content__title">Contact us</p>
+                    <p class="contact-content__text">Don't hesitate to use the form our contact details to get in
+                        touch.:
+                    </p>
+                    <div class="contact-content__details">
+                        <div class="contact-content__details-container">
+                            <img src="./Assets/phone.svg" alt="" class="contact-content__details-container-icon">
+                            <p class="contact-content__details-container-text">+44 7926591530</p>
                         </div>
 
+                        <div class="contact-content__details-container">
+                            <img src="./Assets/map.svg" alt="" class="contact-content__details-container-icon">
+                            <p class="contact-content__details-container-text">ul. Lesna, 87-987 Tlen</p>
+                        </div>
 
-
+                        <div class="contact-content__details-container">
+                            <img src="./Assets/mail.svg" alt="" class="contact-content__details-container-icon">
+                            <p class="contact-content__details-container-container">olimpia.czech@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="map container">
+                        <iframe width="100%" height="500px" frameborder="0" scrolling="no" marginheight="0"
+                            marginwidth="0"
+                            src="https://www.openstreetmap.org/export/embed.html?bbox=18.256933093070987%2C53.6203707628606%2C18.26460421085358%2C53.62297022292572&amp;layer=mapnik&amp;marker=53.62167051290445%2C18.26076865196228"></iframe>
                     </div>
                 </div>
 
-
-
-            </div>
-
-
-
-
-        </section>
-        <div class="contact container">
-            <div class="contact-content ">
-                <p class="contact-content__title">Contact us</p>
-                <p class="contact-content__text">Don't hesitate to use the form our contact details to get in touch.:
-                </p>
-                <div class="contact-content__details">
-                    <div class="contact-content__details-container">
-                        <img src="./Assets/phone.svg" alt="" class="contact-content__details-container-icon">
-                        <p class="contact-content__details-container-text">+44 7926591530</p>
-                    </div>
-
-                    <div class="contact-content__details-container">
-                        <img src="./Assets/map.svg" alt="" class="contact-content__details-container-icon">
-                        <p class="contact-content__details-container-text">ul. Lesna, 87-987 Tlen</p>
-                    </div>
-
-                    <div class="contact-content__details-container">
-                        <img src="./Assets/mail.svg" alt="" class="contact-content__details-container-icon">
-                        <p class="contact-content__details-container-container">olimpia.czech@gmail.com</p>
-                    </div>
-                </div>
-                <div class="map container">
-                    <iframe width="100%" height="500px" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-                        src="https://www.openstreetmap.org/export/embed.html?bbox=18.256933093070987%2C53.6203707628606%2C18.26460421085358%2C53.62297022292572&amp;layer=mapnik&amp;marker=53.62167051290445%2C18.26076865196228"></iframe>
-                </div>
             </div>
         </div>
         <div class="footer">
             <div class="container">
                 <div class="footer__container ">
                     <img src="./Assets/facebook.svg" alt="">
-                    <div class="footer__container-text">
-                        <p class="rodo">RODO</p>
-                        <p class="cookies">Cookies</p>
+                    <div class="footer__container__text">
+                        <p>Woodland 2020</p>
+                        <a href="">RODO</a>
+                        <a href="">Cookies</a>
+
                     </div>
                 </div>
             </div>
         </div>
 
     </div>
-
-
+    <script src="https://unpkg.com/js-datepicker"></script>
+    <script src="./js/booking.js"></script>
+    <script>
+        datePicker('start');
+        datePicker('end');
+        const picker1 = datepicker('.calendar5', {
+            formatter: (input, date, instance) => {
+                getMonthFromDate(date, 'start');
+                localStorage.setItem("start", date);
+            },
+            customDays: ['S', 'M', 'T', 'W', 'T', 'F', 'S']
+        }, )
+        const picker2 = datepicker('.calendar6', {
+            formatter: (input, date, instance) => {
+                getMonthFromDate(date, 'end');
+                localStorage.setItem("start", date);
+            },
+            customDays: ['S', 'M', 'T', 'W', 'T', 'F', 'S']
+        }, )
+    </script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

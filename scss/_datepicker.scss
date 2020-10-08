@@ -5,19 +5,44 @@
     box-shadow: none !important;
     border: none;
 
+    @include breakpoint(smallerDesktop) {
+        top: 79px !important;
+        left: -62px !important;
+    }
+
+    @include breakpoint(mobileonly) {
+        top: 79px !important;
+        left: -62px !important;
+    }
+
+    @include breakpoint(mobilesmall) {
+        width: 320px;
+        left: -40px !important;
+    }
+
+    @include breakpoint(mobilethesmallest) {
+        width: 290px;
+    }
+
+
     .qs-controls {
         margin: 15px 0 5px 0;
         background-color: transparent;
         text-transform: uppercase;
         letter-spacing: 1px;
-        
- 
+
+        @include breakpoint(mobileonly) {
+            margin: 10px 0 5px 0;
+        }
+
+
 
         .qs-month-year {
             color: $main_color;
             font-size: 18px;
 
-            .qs-month, .qs-year {
+            .qs-month,
+            .qs-year {
                 font-weight: 300;
             }
         }
@@ -28,7 +53,6 @@
         font-weight: 200;
         margin: 5px 0;
         transition: .1s;
-
 
         &:hover {
             background: $main_color !important;
@@ -47,4 +71,3 @@
     }
 
 }
-

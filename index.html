@@ -13,7 +13,10 @@
 </head>
 
 <body>
-    <div class="main-wrapper home">
+
+
+
+    <div class="main-wrapper">
         <header class="header">
             <div class="menu-top">
                 <div class="container menu-top__container">
@@ -24,22 +27,27 @@
                     <img src="./Assets/facebook.svg" alt="" class="menu-top__facebook">
                 </div>
             </div>
+
+
             <div class="menu">
+
                 <div class="container">
                     <div class="menu__box">
 
-                        <a href="" class="menu__logo">
-                   <img src="./Assets/logo.svg" alt="" class="menu__logo-icon">
-                
-               </a>
+                        <a href="" class="menu__logo"><img src="./Assets/logo.svg" alt="" class="menu__logo-icon"></a>
                         <div class="menu__list">
                             <a href="/Woodland/index.html" class="menu__list-position menu-active">Home</a>
                             <a href="/Woodland/about.html" class="menu__list-position">About us</a>
                             <a href="/Woodland/rooms.html" class="menu__list-position">Rooms</a>
                             <a href="/Woodland/restaurant.html" class="menu__list-position">Restaurant</a>
                             <a href="/Woodland/contact.html" class="menu__list-position">Contact</a>
+                        </div>
+                        <div class="menu-mobile">
+
+                            <img src=".//Assets/menu_mobile.svg" alt="">
 
                         </div>
+
                     </div>
 
                 </div>
@@ -54,23 +62,23 @@
         </header>
         <div class="calendar container">
             <div class="date">
-                <p class="date__check">Check-in date</p>
+                <p class="date__check">Check-in</p>
                 <div class="date__box">
                     <div class="date__box-number date__box-number-start">15</div>
                     <div class="date__box-in">
                         <p class="date__box-in-month date__box-in-month-start">AUG</p>
-                        <input class="date__box-in-icon calendar1" style="color: transparent;text-shadow: 0 0 0 red;" />
+                        <input class="date__box-in-icon calendar1" style="color: transparent" />
                     </div>
                 </div>
             </div>
 
             <div class="date">
-                <p class="date__check">Check-in date</p>
+                <p class="date__check">Check-out</p>
                 <div class="date__box">
                     <div class="date__box-number date__box-number-end">15</div>
                     <div class="date__box-in">
                         <p class="date__box-in-month date__box-in-month-end">AUG</p>
-                        <input class="date__box-in-icon calendar2" style="color: transparent;text-shadow: 0 0 0 red;" />
+                        <input class="date__box-in-icon calendar2" style="color: transparent" />
                     </div>
                 </div>
             </div>
@@ -103,7 +111,7 @@
                 velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt
                 in culpa qui officia deserunt mollit anim id est laborum.</p>
         </section>
-        ś <section class="article container">
+        <section class="article container">
 
 
             <div class="article-single">
@@ -114,15 +122,14 @@
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-                    <button class="article-single__text-button">Read more</button>
+                    <a href="/Woodland/rooms.html" class="article-single__text-button">Read more</a>
+
+                </div>
+                <div class="article-single__img rooms-img">
                 </div>
 
-                <!-- <div class="article-single__img rooms"></div> -->
 
-
-                <img src="./Assets/rooms.jpg" alt="" class="article-single__img">
             </div>
-
             <div class="article-single odd">
                 <div class="article-single__text">
                     <h2 class="article-single__text-title">Restaurant</h2>
@@ -131,13 +138,14 @@
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-                    <button class="article-single__text-button">Read more</button>
+                    <a href="/Woodland/restaurant.html" class="article-single__text-button">Read more</a>
                 </div>
 
 
-                <!-- <div class="article-single__img restaurant"></div> -->
 
-                <img src="./Assets/restaurant.jpg" alt="" class="article-single__img">
+                <div class="article-single__img restaurant-img">
+
+                </div>
 
 
             </div>
@@ -149,10 +157,12 @@
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-                    <button class="article-single__text-button">Read more</button>
+                    <a href="/Woodland/outdoor.html" class="article-single__text-button">Read more</a>
                 </div>
-                <!-- <div class="article-single__img outdoor"></div> -->
-                <img src="./Assets/outdoor.jpg" alt="" class="article-single__img">
+
+
+                <div class="article-single__img outdoor-img">
+                </div>
             </div>
             <div class="article-single odd">
                 <div class="article-single__text">
@@ -162,11 +172,14 @@
                         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                         exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 
-                    <button class="article-single__text-button">Read more</button>
+                    <a href="/Woodland/outdoor.html" class="article-single__text-button">Read more</a>
                 </div>
-                <!-- <div class="article-single__img spa"></div> -->
-                <img src="./Assets/spa.jpg" alt="" class="article-single__img">
+
+                <div class="article-single__img spa-img">
+                </div>
             </div>
+
+
         </section>
         <section class="video">
             <div class="overlay">
@@ -236,16 +249,17 @@
             <div class="container">
                 <div class="footer__container ">
                     <img src="./Assets/facebook.svg" alt="">
-                    <div class="footer__container-text">
-                        <p class="rodo">RODO</p>
-                        <p class="cookies">Cookies</p>
+                    <div class="footer__container__text">
+                        <p>Woodland 2020</p>
+                        <a href="">RODO</a>
+                        <a href="">Cookies</a>
+
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- <script src="./js/tns.js"></script>
-    <script src="./js/script.js"></script> -->
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
 
@@ -255,13 +269,6 @@
 
         const slider = tns({
             container: '.slider',
-            // items: 4,
-            // slideBy: 1,
-            // autoplay: false,
-            // // loop: true,
-            // rewind: true,
-            // autoplay: true,
-
             items: 4,
             autoplay: true,
             autoplayTimeout: 4000,
@@ -271,25 +278,53 @@
             autoplayButtonOutput: false,
             touch: true,
             mouseDrag: true,
+            responsive: {
+                320: {
+                    items: 1
+                },
+
+                500: {
+                    items: 2
+                },
+                800: {
+                    items: 2
+                },
+
+                960: {
+                    items: 3
+                },
+                1024: {
+                    items: 3
+                }
+
+            }
 
         });
     </script>
     <script src="https://unpkg.com/js-datepicker"></script>
     <script src="./js/index.js"></script>
     <script>
+        datePicker('start');
+        datePicker('end');
         const picker1 = datepicker('.calendar1', {
             formatter: (input, date, instance) => {
                 getMonthFromDate(date, 'start');
+                localStorage.setItem("start", date);
             },
             customDays: ['S', 'M', 'T', 'W', 'T', 'F', 'S']
         }, )
         const picker2 = datepicker('.calendar2', {
             formatter: (input, date, instance) => {
                 getMonthFromDate(date, 'end');
+                localStorage.setItem("end", date);
             },
             customDays: ['S', 'M', 'T', 'W', 'T', 'F', 'S']
         }, )
     </script>
+
+    <script src="./js/menu.js"></script>
+
+
 </body>
 
 </html>

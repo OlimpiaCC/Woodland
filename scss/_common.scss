@@ -45,4 +45,38 @@ input:focus {
 .menu-active {
     border-bottom: 6px solid white;
     padding-bottom: 17px;
+
+    @include breakpoint(phablet) {
+        border-bottom: none;
+        padding-bottom: 0;
+
+    }
+
+}
+
+p {
+
+    font-size: 16px;
+
+    @include breakpoint(phablet) {
+        font-size: 14px;
+    }
+}
+
+h1 {
+    font-size: 70px;
+
+
+    @include breakpoint(phablet) {
+        font-size: 50px;
+    }
+
+
+    @include breakpoint(mobileonly) {
+        font-size: 40px;
+    }
+}
+
+.white {
+    background-color: white;
 }

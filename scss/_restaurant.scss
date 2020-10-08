@@ -6,12 +6,20 @@
     background-attachment: fixed;
     height: 800px;
 
+    @include breakpoint(mobileonly) {
+        height: 700px;
+    }
+
     &__text {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-top: 200px;
         padding-bottom: 350px;
+
+        @include breakpoint(mobileonly) {
+            padding-top: 166px;
+        }
     }
 
     &__title {
@@ -50,12 +58,30 @@
         background-color: white;
         box-shadow: 0 2px 20px 0 rgba($color: #000000, $alpha: 0.10);
 
+
+        @include breakpoint(bigTablet) {
+            padding-right: 5%;
+            padding-left: 5%;
+            width: 80%;
+
+        }
+
         .menu-title {
             font-family: "Limber";
             font-size: 70px;
             color: $main-color;
             text-align: center;
             padding: 20px 0;
+
+            @include breakpoint(bigTablet) {
+                padding-top: 40px;
+                padding-bottom: 0;
+
+            }
+
+
+
+
 
         }
 
@@ -65,12 +91,26 @@
             justify-content: space-between;
             padding: 50px;
 
+            @include breakpoint(bigTablet) {
+                padding: 30px;
+
+
+            }
+
+
+
             .menu-single-category {
                 display: flex;
                 flex-direction: column;
                 width: 45%;
                 margin-bottom: 40px;
                 padding-right: 20px;
+
+                @include breakpoint(bigTablet) {
+                    width: 96%;
+
+
+                }
 
                 &__title {
                     font-size: 25px;
@@ -124,9 +164,20 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-
         background-color: white;
         height: 70%;
+
+        @include breakpoint(bigTablet) {
+            margin-left: 5%;
+            margin-right: 5%;
+
+        }
+
+        @include breakpoint(bigMobile) {
+            height: 80%;
+
+
+        }
 
 
         &__button-wrapper {
@@ -178,10 +229,21 @@
                 justify-content: space-between;
                 padding: 20px 0;
                 overflow: hidden;
+
+                @include breakpoint(bigMobile) {
+                    flex-direction: column;
+
+                }
             }
 
             &__name {
                 width: 46%;
+
+                @include breakpoint(bigMobile) {
+                    width: 100%;
+                    margin-bottom: 20px;
+
+                }
 
                 input {
                     width: 97%;
@@ -191,6 +253,12 @@
 
             &__email {
                 width: 46%;
+
+
+                @include breakpoint(bigMobile) {
+                    width: 100%;
+
+                }
 
                 input {
                     width: 97%;

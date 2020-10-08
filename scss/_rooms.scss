@@ -6,12 +6,18 @@
     background-attachment: fixed;
     height: 800px;
 
+    @include breakpoint(mobileonly) {
+        height: 700px;
+    }
+
     &__text {
         display: flex;
         flex-direction: column;
         align-items: center;
         padding-top: 200px;
         padding-bottom: 350px;
+
+    
     }
 
     &__title {
@@ -54,6 +60,52 @@
         // flex-direction: column;
 
 
+        @include breakpoint(bigTablet) {
+            padding-right: 5%;
+            padding-left: 5%;
+            width: 90%;
+
+        }
+
+        @include breakpoint(bigMobile) {
+            flex-direction: column;
+
+
+        }
+
+        .calendar {
+            margin-top: 5px;
+            margin-bottom:50px;
+
+            @include breakpoint(newMobile) {
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+            }
+        
+            & .date:nth-child(2) {
+                .qs-datepicker-container {
+                    @include breakpoint(smallerDesktop) {
+                        left: -100px !important;
+                    }
+        
+                    @include breakpoint(tablet) {
+                        left: -194px !important;
+                    }
+        
+                    @include breakpoint(mobilesmall) {
+                        left: -160px !important;
+                    }
+        
+                    @include breakpoint(mobilethesmallest) {
+                        left: -146px !important;
+                    }
+                }
+            }
+        
+        }
+
+
 
         .room-single {
             display: flex;
@@ -62,6 +114,12 @@
             background-color: white;
             box-shadow: 0 2px 20px 0 rgba($color: #000000, $alpha: 0.10);
             margin-bottom: 50px;
+
+            @include breakpoint(bigMobile) {
+                width: 100%;
+    
+    
+            }
 
 
 
@@ -87,7 +145,7 @@
             &__icon {
                 width: 40px;
                 height: 40px;
-                padding: 50px 20px 0 0;
+                padding: 30px 10px 30px 0;
             }
 
             &__button-wrapper {
